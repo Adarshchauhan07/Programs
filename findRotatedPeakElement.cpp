@@ -18,7 +18,7 @@ int findMaxEle(vector<int>&arr){
         }
         else if(arr[mid]>arr[mid+1] && arr[mid]>arr[mid-1] && mid+1<arr.size() && mid-1>0){
             return mid;
-        }
+        } 
         else{
             st=mid+1;
         }
@@ -27,7 +27,7 @@ int findMaxEle(vector<int>&arr){
     return -1;
 }
 int main(){
-    vector<int>vtr{12,13,14,15,16,1,2,3,4,5,6,7,8};
+    vector<int>vtr{16,1,2,3,4,5,6,7,8};
     int check =findMaxEle(vtr);
     cout<<vtr[check];
 }

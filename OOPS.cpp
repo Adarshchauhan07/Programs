@@ -1,44 +1,29 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
 using namespace std;
 class hero{
-    private:
-    int health;
+    string name;
+    int age;
+    int income;
 
     public:
-    
-    hero(){
-        cout<<"first called!!!"<<endl;
-    }
 
-    hero(int health){
-        this -> health=health;
-        cout<<"one constructor called"<<endl;
-        cout<<health<<endl;
+    void getfn(string str, int age1, int income1){
+        name=str;
+        age=age1;
+        income=income1;
     }
-
-    hero(int health, string str){
-        cout<<"two variable constructor"<<endl;
-        this -> health=health;
-        cout<<health<<endl;
-        cout<<str<<endl;
-    }
-
-    void sethealth(int num){
-        health=num;
-    }
-    int gethealth(){
-        return health;
-    }
-    string level;
-    bool ticket;
-
-    void print(){
-        cout<<level<<endl<<ticket<<endl;
+    string setfn(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<income<<endl;
+        return name;
     }
 };
 int main(){
-    hero Adarsh;
-    hero arya(5);
-    hero last(24,"string");
+    hero arya;
+    arya.getfn("Adarsh Chauhan",21, 150000);
+    arya.setfn();
+
     
 }
